@@ -23,71 +23,86 @@
     <title>Bootstrap</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <div class="container-fluid">
-        <img src="./img/duck.png" alt="Bootstrap" width="50" height="50" />
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <img src="./img/duck.png" alt="Bootstrap" width="50" height="50" />
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end text-bg-dark"
-          tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              Dark offcanvas
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul
-              class="navbar-nav align-items-center justify-content-sart me-auto fs-6"
-            >
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Catalogo Libri</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Anagrafica utenti</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Storico Prestiti</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Help</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Cerca..."
-                aria-label="Search"
-              />
-              <button class="btn btn btn-outline-light" type="submit">
-                Cerca
-              </button>
-            </form>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                Dark offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav align-items-center justify-content-sart me-auto fs-6"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Catalogo Libri</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Anagrafica utenti</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Storico Prestiti</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Help</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Cerca..."
+                  aria-label="Search"
+                />
+                <button class="btn btn btn-outline-light" type="submit">
+                  Cerca
+                </button>
+              </form>
+            </div>
           </div>
         </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="tab-head d-flex justify-content-between">
+              <h3>Catalogo libri</h3>
+              <button type="button" class="btn btn-primary">Primary</button>
+            </div>
+          </div>
+          <div class="col-lg-4">faq fomande</div>
+        </div>
       </div>
-    </nav>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
