@@ -91,10 +91,11 @@
 
     <main>
       <div class="container">
-        <div class="row">
+        <div class="row pt-4 mb-4">
           <h1>Nuovo Libro</h1>
         </div>
-        <div class="row">
+        <!-- nome e cognome -->
+        <div class="row mb-4">
           <div class="col-6">
             <div class="mb-3">
               <label for="add-book-name" class="form-label fs-5 fw-medium"
@@ -122,7 +123,8 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <!-- titolo -->
+        <div class="row mb-4">
           <div class="col">
             <label for="add-title" class="form-label fs-5 fw-medium"
               >Titolo</label
@@ -139,8 +141,9 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col col-md-4">
+        <!-- generi-anno-isbn -->
+        <div class="row mb-4">
+          <div class="col-sm-4">
             <label for="add-type" class="form-label fs-5 fw-medium"
               >Genere</label
             >
@@ -157,8 +160,67 @@
               <option value="5">Fantasy</option>
             </select>
           </div>
-          <div class="col col-md-4">ANNO DI PUBBLICAZIOME</div>
-          <div class="col col-md-4">ISBN</div>
+          <div class="col-lg-4">
+            <div class="mb-3">
+              <label for="add-public-date" class="form-label fs-5 fw-medium"
+                >Anno di Pubblicazione</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="add-public-date"
+                placeholder="Inserisci l'anno"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="mb-3">
+              <label for="add-isbn" class="form-label fs-5 fw-medium"
+                >ISBN#</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="add-isbn"
+                placeholder="Inserisci il codice ISBN#"
+              />
+            </div>
+          </div>
+          <!-- linea -->
+          <div class="linea mb-4"></div>
+          <!-- note -->
+          <div class="row">
+            <div class="col-12 mb-4">
+              <label for="add-notes" class="form-label fs-5 fw-medium"
+                >Note</label
+              >
+              <textarea
+                class="form-control"
+                id="add-notes"
+                rows="3"
+                placeholder="Inserisci eventuali note sul libro"
+              ></textarea>
+            </div>
+            <div class="col-12 mb-4">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="add-digital"
+                />
+                <label class="form-check-label" for="add-digital">
+                  Disponibile anche in digitale
+                </label>
+              </div>
+            </div>
+            <!-- bottone invio -->
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">
+                Aggiungi Libro
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </main>
