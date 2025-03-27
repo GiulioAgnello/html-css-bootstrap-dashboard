@@ -143,7 +143,7 @@
         </div>
         <!-- generi-anno-isbn -->
         <div class="row mb-4">
-          <div class="col-sm-4">
+          <div class="col-sm-4 mb-4">
             <label for="add-type" class="form-label fs-5 fw-medium"
               >Genere</label
             >
@@ -160,7 +160,7 @@
               <option value="5">Fantasy</option>
             </select>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-2">
             <div class="mb-3">
               <label for="add-public-date" class="form-label fs-5 fw-medium"
                 >Anno di Pubblicazione</label
@@ -173,7 +173,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-4">
             <div class="mb-3">
               <label for="add-isbn" class="form-label fs-5 fw-medium"
                 >ISBN#</label
@@ -187,39 +187,41 @@
             </div>
           </div>
           <!-- linea -->
-          <div class="linea mb-4 mt-4"></div>
-          <!-- note -->
-          <div class="row">
-            <div class="col-12 mb-4">
-              <label for="add-notes" class="form-label fs-5 fw-medium"
-                >Note</label
-              >
-              <textarea
-                class="form-control"
-                id="add-notes"
-                rows="3"
-                placeholder="Inserisci eventuali note sul libro"
-              ></textarea>
+          <div class="col-12">
+            <div class="linea mb-4 mt-4"></div>
+          </div>
+        </div>
+        <!-- note -->
+        <div class="row">
+          <div class="col-12 mb-4">
+            <label for="add-notes" class="form-label fs-5 fw-medium"
+              >Note</label
+            >
+            <textarea
+              class="form-control"
+              id="add-notes"
+              rows="3"
+              placeholder="Inserisci eventuali note sul libro"
+            ></textarea>
+          </div>
+          <div class="col-12 mb-4">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="add-digital"
+              />
+              <label class="form-check-label" for="add-digital">
+                Disponibile anche in digitale
+              </label>
             </div>
-            <div class="col-12 mb-4">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="add-digital"
-                />
-                <label class="form-check-label" for="add-digital">
-                  Disponibile anche in digitale
-                </label>
-              </div>
-            </div>
-            <!-- bottone invio -->
-            <div class="col-12">
-              <a href="./index.html" class="btn btn-primary" type="submit">
-                Aggiungi Libro
-              </a>
-            </div>
+          </div>
+          <!-- bottone invio -->
+          <div class="col-12">
+            <a href="./index.html" class="btn btn-primary" type="submit">
+              Aggiungi Libro
+            </a>
           </div>
         </div>
       </div>
