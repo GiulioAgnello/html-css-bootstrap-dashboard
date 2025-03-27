@@ -113,22 +113,155 @@
                   aria-labelledby="offcanvasRightLabel"
                 >
                   <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasRightLabel">
-                      Libro
-                    </h5>
                     <div class="offcanvas-body">
-                      <div class="dropdown">
-                        <label
-                          for="add-book-name"
-                          class="form-label fs-5 fw-medium"
-                          >Nome Autore</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="add-book-name"
-                          placeholder="Inserisci il nome dell'autore"
-                        />
+                      <div class="container">
+                        <div class="row pt-4 mb-4">
+                          <h1>Nuovo Libro</h1>
+                        </div>
+                        <!-- nome e cognome -->
+                        <div class="row mb-4">
+                          <div class="col-12">
+                            <div class="mb-3">
+                              <label
+                                for="add-book-name"
+                                class="form-label fs-5 fw-medium"
+                                >Nome Autore</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="add-book-name"
+                                placeholder="Inserisci il nome dell'autore"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="mb-3">
+                              <label
+                                for="add-book-surname"
+                                class="form-label fs-5 fw-medium"
+                                >Cognome Autore</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="add-book-surname"
+                                placeholder="Inserisci il Cognome dell'autore"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <!-- titolo -->
+                        <div class="row mb-4">
+                          <div class="col">
+                            <label
+                              for="add-title"
+                              class="form-label fs-5 fw-medium"
+                              >Titolo</label
+                            >
+                            <input
+                              type="text"
+                              id="add-title"
+                              class="form-control"
+                              aria-describedby="add-title"
+                              placeholder="Inserisci il titolo del libro"
+                            />
+                            <div id="add-title" class="form-text COLORE">
+                              Titolo versione italiana
+                            </div>
+                          </div>
+                        </div>
+                        <!-- generi-anno-isbn -->
+                        <div class="row mb-4">
+                          <div class="col-12 mb-4">
+                            <label
+                              for="add-type"
+                              class="form-label fs-5 fw-medium"
+                              >Genere</label
+                            >
+                            <select
+                              id="add-type"
+                              class="form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>Scegli il genere</option>
+                              <option value="1">Horror</option>
+                              <option value="2">Gialli</option>
+                              <option value="3">Saggi</option>
+                              <option value="4">Attualità</option>
+                              <option value="5">Fantasy</option>
+                            </select>
+                          </div>
+                          <div class="col-12 mb-4">
+                            <div class="mb-3">
+                              <label
+                                for="add-public-date"
+                                class="form-label fs-5 fw-medium"
+                                >Anno di Pubblicazione</label
+                              >
+                              <input
+                                type="number"
+                                class="form-control"
+                                id="add-public-date"
+                                placeholder="Inserisci l'anno"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-12 mb-4">
+                            <div class="mb-3">
+                              <label
+                                for="add-isbn"
+                                class="form-label fs-5 fw-medium"
+                                >ISBN#</label
+                              >
+                              <input
+                                type="number"
+                                class="form-control"
+                                id="add-isbn"
+                                placeholder="Inserisci il codice ISBN#"
+                              />
+                            </div>
+                          </div>
+                          <!-- linea -->
+                          <div class="col-12">
+                            <div class="linea mb-4 mt-4"></div>
+                          </div>
+                        </div>
+                        <!-- note -->
+                        <div class="row">
+                          <div class="col-12 mb-4">
+                            <label
+                              for="add-notes"
+                              class="form-label fs-5 fw-medium"
+                              >Note</label
+                            >
+                            <textarea
+                              class="form-control"
+                              id="add-notes"
+                              rows="3"
+                              placeholder="Inserisci eventuali note sul libro"
+                            ></textarea>
+                          </div>
+                          <div class="col-12 mb-4">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="add-digital"
+                              />
+                              <label class="form-check-label" for="add-digital">
+                                Disponibile anche in digitale
+                              </label>
+                            </div>
+                          </div>
+                          <!-- bottone invio -->
+                          <div class="col-12">
+                            <a href="./" class="btn btn-primary" type="submit">
+                              Aggiungi Libro
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <button
